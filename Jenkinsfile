@@ -27,6 +27,12 @@ pipeline{
                         sh 'run build'
                     }
                 }
+                stage("Construccion imagen docker"){
+                    steps{
+                        sh 'docker build - t app .'
+                        sh 'docker tag backend-base us-central1-docker.pkg.dev/expertis-classroom/docker-repository/backend-base:RCR'
+                    }
+                }
             }
         }
     }
