@@ -3,8 +3,8 @@ pipeline{
     stages{
         stage('Etapa 1'){
             steps{
-                echo 'Hola Mundo desde jenkins'
-                sh 'Hola mundo desde el terminal'
+                echo 'Hola Mundo desde Jenkins'
+                sh 'Hola mundo desde el Terminal'
             }
         }
     }
