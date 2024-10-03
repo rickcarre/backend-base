@@ -26,7 +26,9 @@ pipeline{
                     steps{
                         sh 'run build'
                     }
-                }
+                } 
+            }
+            stages{
                 stage("Construccion imagen docker"){
                     steps{
                         sh 'docker build - t app .'
