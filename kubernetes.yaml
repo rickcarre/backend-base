@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-base-deployment
-  namespace: devops
+  namespace: rcr
   labels:
     app: backend-base
 spec:
